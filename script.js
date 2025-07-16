@@ -65,7 +65,7 @@ document.getElementById("generarPDF").addEventListener("click", function () {
         doc.setFont("helvetica");
         doc.setFontSize(22);
         doc.setTextColor(0, 0, 128);
-        doc.text("Compañía Terminal de Manzanillo S.A. de C.V.", 20, 20 + yOffset);
+        doc.text("Transportaciones Industriales Gume S.A. de C.V.", 20, 20 + yOffset);
         doc.setLineWidth(0.5);
         doc.line(20, 25 + yOffset, 190, 25 + yOffset);
         doc.setFontSize(12);
@@ -73,7 +73,7 @@ document.getElementById("generarPDF").addEventListener("click", function () {
         doc.text(`Manzanillo, Colima a: ${formatFecha(fechaRecibo)}`, 20, 30 + yOffset);
         doc.text("Recibo de Nómina", 70, 40 + yOffset);
         doc.text(`Bueno por: $${buenoPor.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`, 20, 55 + yOffset);
-        doc.text("RECIBI DE COMPAÑÍA TERMINAL DE MANZANILLO, SA. DE CV. LA CANTIDAD DE: ", 20, 70 + yOffset);
+        doc.text("RECIBI DE TRANSPORTACIONES INDUSTRIALES GUME, SA. DE CV. LA CANTIDAD DE: ", 20, 70 + yOffset);
         doc.text(`$${buenoPor.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} (${numeroALetras(buenoPor)})`, 20, 80 + yOffset);
         doc.text(`POR CONCEPTO DE LA NOMINA NO. ${numeroNomina}`, 20, 90 + yOffset);
         doc.text(`DEL PERIODO: ${formatFecha(fechaInicio)} AL ${formatFecha(fechaFin)}`, 20, 100 + yOffset);
