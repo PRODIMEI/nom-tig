@@ -73,7 +73,7 @@ document.getElementById("generarPDF").addEventListener("click", function () {
         doc.text(`Manzanillo, Colima a: ${formatFecha(fechaRecibo)}`, 20, 30 + yOffset);
         doc.text("Recibo de Nómina", 70, 40 + yOffset);
         doc.text(`Bueno por: $${buenoPor.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`, 20, 55 + yOffset);
-        doc.text("RECIBI DE TRANSPORTACIONES INDUSTRIALES GUME, SA. DE CV. LA CANTIDAD DE: ", 20, 70 + yOffset);
+        doc.text("RECIBI DE TRANSPORTACIONES IND. GUME, SA. DE CV. LA CANTIDAD DE: ", 20, 70 + yOffset);
         doc.text(`$${buenoPor.toLocaleString("es-MX", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} (${numeroALetras(buenoPor)})`, 20, 80 + yOffset);
         doc.text(`POR CONCEPTO DE LA NOMINA NO. ${numeroNomina}`, 20, 90 + yOffset);
         doc.text(`DEL PERIODO: ${formatFecha(fechaInicio)} AL ${formatFecha(fechaFin)}`, 20, 100 + yOffset);
